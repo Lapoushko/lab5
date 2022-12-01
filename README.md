@@ -50,28 +50,28 @@
 ```yaml
 behaviors:
   Economic:
-    trainer_type: ppo
+    trainer_type: ppo   /* Задаёт вид обученияю. Задано обучение с подкреплением */
     hyperparameters:
-      batch_size: 1024
-      buffer_size: 10240
-      learning_rate: 3.0e-4
-      learning_rate_schedule: linear
-      beta: 1.0e-2
-      epsilon: 0.2
-      lambd: 0.95
-      num_epoch: 3      
+      batch_size: 1024  /* Обозначает число опытов в за одну итерацию градиентного спуска. */
+      buffer_size: 10240    /* Размер необходимого опыта для обновления модели поведения. */
+      learning_rate: 3.0e-4 /* Начальная скорость обучения */
+      learning_rate_schedule: linear    /* Параметр изменения скорости обучения с течением времени. */
+      beta: 1.0e-2  /* Сила регуляриззации энтропии. */
+      epsilon: 0.2  /* Влияет на быстроту изменения поведения во время обучения. */
+      lambd: 0.95    /* lambd -  это параметр регуляризации. */
+      num_epoch: 3       /* Число эпох . */
     network_settings:
-      normalize: false
-      hidden_units: 128
-      num_layers: 2
+      normalize: false  /* Параметр, определяющий автоматическое нормализование обучения. */
+      hidden_units: 128  /* Число нейронов в скрытых слоях. */
+      num_layers: 2 /* Число скрытых слоёв сети */
     reward_signals:
       extrinsic:
-        gamma: 0.99
-        strength: 1.0
+        gamma: 0.99 /* Здесь задаётся коэффициент поощерения, который должен быть меньше единицы. */
+        strength: 1.0   /* Коэффициент силы, на который умножается поощерение. */
     checkpoint_interval: 500000
-    max_steps: 750000
-    time_horizon: 64
-    summary_freq: 5000
+    max_steps: 750000   /* Задаёт максимальное количество повторов симуляции сцены. */
+    time_horizon: 64    /* Количество циклов ML агента, хранящихся в буфере до ввода в модель. */
+    summary_freq: 5000  /* Здесь задаётся частота сохранения статистики тренировок по шагам. */
     self_play:
       save_steps: 20000
       team_change: 100000
