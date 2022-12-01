@@ -107,15 +107,14 @@ behaviors:
 
 ![2022-12-01_20-07-53](https://user-images.githubusercontent.com/45125347/205089944-f6ffed7c-6cbb-4869-965e-ace734cc319e.png)
 
-график стал более линеен.
+График изменился
 
 
 10) Изменил num_epoch с 3 на 1
 
 ![2022-12-01_20-12-25](https://user-images.githubusercontent.com/45125347/205089803-14b8ef9b-b1fa-46d6-abab-f4e73b2cbf0c.png)
 
-Практически нет изменений.
-
+Изменение в графиках
 
 ## Задание 2
 ### Опишите результаты, выведенные в TensorBoard.
