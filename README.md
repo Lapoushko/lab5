@@ -84,9 +84,10 @@ behaviors:
 ![2022-12-01_19-03-24](https://user-images.githubusercontent.com/45125347/205076351-1121513d-8104-43d1-a41b-a082a15f00e7.png)
 
 4) Установил TensorBoard. Появились следующие графики:
-![2022-12-01_19-26-29](https://user-images.githubusercontent.com/45125347/205078150-d3ad3585-a769-4608-b47d-33bc8164b744.png)
+ 
+![2022-12-01_19-28-21](https://user-images.githubusercontent.com/45125347/205078481-9c50222e-cf41-4071-826c-9048cb3f85c5.png)
 
-![2022-12-01_19-26-39](https://user-images.githubusercontent.com/45125347/205078177-d4edd37e-31f2-40ab-bbde-2211eb31cd07.png)
+![2022-12-01_19-28-30](https://user-images.githubusercontent.com/45125347/205078507-c8c28fa7-fa40-4b2f-9e1e-5740b906326a.png)
 
 
 Далее буду изменять 5 раз какие-либо параметры файла Economic.yaml. Задача - добиться максимальной монотонности и линейности графика Cumulative Reward.
