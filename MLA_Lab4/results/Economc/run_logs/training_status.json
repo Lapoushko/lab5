@@ -1,0 +1,30 @@
+{
+    "Economic": {
+        "elo": 1186.0506907437075,
+        "checkpoints": [
+            {
+                "steps": 32040,
+                "file_path": "results\\Economc\\Economic\\Economic-32040.onnx",
+                "reward": 0.9166666666666666,
+                "creation_time": 1669907509.6715467,
+                "auxillary_file_paths": [
+                    "results\\Economc\\Economic\\Economic-32040.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 32040,
+            "file_path": "results\\Economc\\Economic.onnx",
+            "reward": 0.9166666666666666,
+            "creation_time": 1669907509.6715467,
+            "auxillary_file_paths": [
+                "results\\Economc\\Economic\\Economic-32040.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
